@@ -1,0 +1,248 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil Profissional</title>
+</head>
+<body>
+
+<nav class="menu">
+    <a href="informacoes.html"><button>Mais informações</button></a>
+    <a href="hobbies.html"><button>Hobbies</button></a>
+
+</nav>
+
+<style>
+    .imagens img {
+    transition: 0.3s;
+}
+
+.imagens img:hover {
+    transform: translateY(-15px);
+}
+
+    html, body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+        background-image: url("plano_png.png");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    
+    }
+
+    body {
+        background-color: #000000;
+        color: #ffffff;
+    }
+
+    .menu {
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+        padding: 12px 0;
+        background-color: #000000;
+    }
+
+    .menu button {
+        background-color: #ffffff;
+        color: #831b1b;
+        padding: 12px 25px;
+        border-radius: 6px;
+        border: 1px solid #831b1b;
+        font-family: Arial, sans-serif;
+        font-size: 20px;
+        font-weight: bold;
+        cursor: pointer;
+        transition: 0.2s;
+    }
+
+    .menu button:hover {
+        background-color: #831b1b;
+        color: #ffffff;
+        transform: scale(1.05);
+    }
+
+    a {
+        color: white;
+        text-decoration: none;
+    }
+
+    .conteudo {
+        text-align: center;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    img {
+        border-radius: 80px;
+        border-style: dashed;
+        border-color: #831b1b;
+        width: 200px;
+        height: 200px;
+        display: block;
+        margin: 20px auto;
+    
+    }
+
+    h1, h2, h3 {
+        color: #ffffff;
+    }
+
+    h3 {
+        color: #ffffff;
+        font-weight: normal;
+    }
+
+    .botao {
+        border-radius: 80px;
+        width: 350px;
+        height: 70px;
+        background-color: #831b1b;
+        color: #ffffff;
+        font-size: 20px;
+        font-weight: bold;
+        cursor: pointer;
+        transition: 0.2s;
+        border: none;
+        margin-top: 15px;
+    }
+
+    .botao:hover {
+        background-color: #000000;
+        color: #831b1b;
+        border: 1px solid #831b1b;
+        transform: scale(1.05);
+    }
+
+    table {
+        color: #ffffff;
+        border-collapse: collapse;
+        margin: 10px auto;
+        width: 450px;
+    }
+
+    th, td {
+        border: 1px solid #831b1b;
+        padding: 10px;
+        text-align: center;
+        width: 225px;
+    }
+
+    th {
+        background-color: #831b1b;
+        color: #ffffff;
+    }
+
+    .button {
+        background-color: #831b1b;
+        color: #ffffff;
+        padding: 10px 15px;
+        border-radius: 6px;
+        border: none;
+        font-family: Arial, sans-serif;
+        font-size: 20px;
+        font-weight: bold;
+        cursor: pointer;
+        transition: 0.2s;
+        width: 100px;
+    }
+
+    .button:hover {
+        background-color: #000000;
+        color: #831b1b;
+        border: 1px solid #831b1b;
+        transform: scale(1.05);
+    }
+</style>
+
+<div class="conteudo">
+
+    <h1>Pedro Henrique Lima de Oliveira</h1>
+
+  <a href="https://github.com/pedrohenrilima9-sketch/pedroaulavinteum">
+        <img src="WhatsApp Image 2026-10-25 at 15.29.07.jpeg" alt="Descrição da imagem" width="300" height="200">
+    </a>
+
+    <h2>Meus hobbies são:</h2>
+
+    <h3>
+        Gosto de jogar futsal e assistir séries. Algumas das minhas<br> séries favoritas são:
+        The Walking Dead, Cobra Kai, Prison Break e Breaking Bad.
+    </h3>
+
+    <h2>Minhas habilidades são:</h2>
+
+    <h3>
+        Sou bastante criativo para resolver problemas e muito organizado.
+    </h3>
+
+    <h2>Minha formação acadêmica</h2>
+
+    <h3>
+        Atualmente, estou cursando o 2º ano do curso técnico de Tecnologia da Informação <br>(TI)
+        no Senac de Jaraguá do Sul, onde desenvolvo meus conhecimentos em programação,<br>
+        desenvolvimento web e banco de dados.
+    </h3>
+
+    <h2>Cursos e certificações</h2>
+
+    <h3>
+        Já concluí um curso de Informática Básica e possuo diploma,<br>que comprova meus
+        conhecimentos iniciais no uso de computadores e ferramentas digitais.
+    </h3>
+
+    <a href="https://wa.me/558491841425" target="_blank">
+        <button class="botao">MEU CONTATO</button>
+    </a>
+
+    <h2>Meus Projetos 💻</h2>
+
+    <table>
+        <thead>
+            <tr>
+                <th>BACK END</th>
+                <th>FRONT END</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>
+                    <a href="barbearia.html">
+                        <button class="button">PHP</button>
+                    </a>
+                </td>
+
+                <td>
+                    <a href="https://pedrohenrilima9-sketch.github.io/siteclashroyale/">
+                        <button class="button">HTML</button>
+                    </a>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <a href="meutenis.html">
+                        <button class="button">MYSQL</button>
+                    </a>
+                </td>
+
+                <td>
+                    <a href="https://pedrohenrilima9-sketch.github.io/livraria/">
+                        <button class="button">CSS</button>
+                    </a>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+</div>
+
+</body>
+</html>
+

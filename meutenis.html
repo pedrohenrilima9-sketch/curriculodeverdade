@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Meutênis | Projeto de E-commerce</title>
+<style>
+:root{--bg:#101010;--panel:#191919;--orange:#ff7a39;--orange2:#d95f23;--text:#f5f5f5;--muted:#b8b8b8;--line:#343434}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Arial,Helvetica,sans-serif;background:var(--bg);color:var(--text);line-height:1.65}
+a{color:inherit;text-decoration:none}
+header{position:sticky;top:0;z-index:10;background:rgba(16,16,16,.94);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+nav{max-width:1120px;margin:auto;padding:17px 24px;display:flex;align-items:center;justify-content:space-between;gap:18px}
+.logo{font-size:1.35rem;font-weight:900;letter-spacing:1px;color:var(--orange)}
+.logo span{color:white}
+nav ul{display:flex;gap:22px;list-style:none;flex-wrap:wrap}
+nav a:hover{color:var(--orange)}
+.hero{max-width:1120px;margin:auto;padding:78px 24px 68px;display:grid;grid-template-columns:1.15fr .85fr;gap:40px;align-items:center}
+.tag{display:inline-block;color:var(--orange);border:1px solid #753d24;border-radius:30px;padding:5px 13px;font-size:.85rem;margin-bottom:18px}
+h1{font-size:clamp(2.5rem,6vw,4.7rem);line-height:1.04;letter-spacing:-2px;margin-bottom:22px}
+h1 span{color:var(--orange)}
+.hero p{color:var(--muted);font-size:1.08rem;max-width:620px}
+.hero-art{background:linear-gradient(140deg,#242424,#141414);border:1px solid #3a302b;border-radius:24px;padding:28px;min-height:280px;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;box-shadow:0 18px 55px #0008}
+.shoe{font-size:5.5rem;line-height:1.3}
+.hero-art strong{font-size:1.7rem;letter-spacing:2px}
+.hero-art small{color:var(--orange);letter-spacing:3px}
+section{max-width:1120px;margin:auto;padding:46px 24px}
+.section-head{margin-bottom:26px}
+.section-head .eyebrow{color:var(--orange);text-transform:uppercase;letter-spacing:2px;font-size:.8rem;font-weight:bold}
+h2{font-size:clamp(1.7rem,4vw,2.5rem);line-height:1.2;margin:8px 0 12px}
+.section-head p,.body-copy{color:var(--muted);max-width:800px}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:22px}
+.card .icon{font-size:1.8rem;margin-bottom:10px}
+.card h3{margin-bottom:8px;color:#fff}
+.card p{color:var(--muted);font-size:.96rem}
+.highlight{border-color:#744027;background:linear-gradient(145deg,#211812,#191919)}
+.gallery{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px}
+.shot{overflow:hidden;border:1px solid var(--line);background:var(--panel);border-radius:16px}
+.shot img{display:block;width:100%;height:280px;object-fit:contain;background:#f5f5f5}
+.shot figcaption{padding:16px 18px}
+.shot figcaption strong{display:block;margin-bottom:5px}
+.shot figcaption p{color:var(--muted);font-size:.93rem}
+.note{margin-top:20px;border-left:3px solid var(--orange);padding:14px 18px;background:#1b1715;color:#ddd;border-radius:0 10px 10px 0}
+.steps{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
+.step{display:flex;gap:15px;padding:18px;border:1px solid var(--line);border-radius:14px;background:var(--panel)}
+.num{flex:0 0 38px;height:38px;display:grid;place-items:center;background:var(--orange);color:#17100b;border-radius:10px;font-weight:900}
+.step p{color:var(--muted);font-size:.95rem}
+footer{border-top:1px solid var(--line);margin-top:30px;padding:28px 24px;text-align:center;color:var(--muted)}
+footer strong{color:var(--orange)}
+@media(max-width:760px){.hero{grid-template-columns:1fr;padding-top:52px}.cards{grid-template-columns:1fr}.gallery,.steps{grid-template-columns:1fr}nav{align-items:flex-start;flex-direction:column}.shot img{height:230px}}
+</style>
+</head>
+<body>
+<header>
+  <nav>
+    <a class="logo" href="#inicio">MEU<span>TÊNIS</span></a>
+    <ul>
+      <li><a href="#sobre">Sobre</a></li>
+      <li><a href="#funcionalidades">Funcionalidades</a></li>
+      <li><a href="#galeria">Galeria</a></li>
+      <li><a href="#contribuicao">Minha contribuição</a></li>
+    </ul>
+  </nav>
+</header>
+<main>
+  <div class="hero" id="inicio">
+    <div>
+      <span class="tag">Projeto de desenvolvimento web</span>
+      <h1>Uma loja online feita para quem ama <span>tênis.</span></h1>
+      <p>O Meutênis é um projeto de e-commerce desenvolvido em grupo, com foco na experiência de compra, organização da loja e comunicação entre clientes e administrador.</p>
+    </div>
+    <div class="hero-art" aria-label="Identidade visual do projeto Meutênis">
+      <div class="shoe">👟</div>
+      <strong>MEUTÊNIS</strong>
+      <small>ESTILO • CONFORTO • TECNOLOGIA</small>
+    </div>
+  </div>
+
+  <section id="sobre">
+    <div class="section-head">
+      <span class="eyebrow">01 / Sobre o projeto</span>
+      <h2>Uma experiência de loja virtual</h2>
+      <p>O projeto reúne páginas de uma loja de calçados esportivos e recursos de gerenciamento. A interface utiliza uma identidade visual com tons de laranja, pensada para manter a navegação consistente entre as telas.</p>
+    </div>
+    <div class="cards">
+      <article class="card"><div class="icon">🛍️</div><h3>Loja virtual</h3><p>Estrutura de e-commerce voltada à apresentação e à navegação por produtos de tênis.</p></article>
+      <article class="card"><div class="icon">🔐</div><h3>Contas de usuário</h3><p>Páginas de login e cadastro conectadas ao sistema de autenticação do projeto.</p></article>
+      <article class="card"><div class="icon">💬</div><h3>Comunicação</h3><p>Área de conversa para aproximar clientes e administrador dentro do projeto.</p></article>
+    </div>
+  </section>
+
+  <section id="funcionalidades">
+    <div class="section-head">
+      <span class="eyebrow">02 / Funcionalidades</span>
+      <h2>Recursos desenvolvidos</h2>
+      <p>As funcionalidades são divididas entre os integrantes do grupo. A página destaca os recursos observados no projeto sem atribuir todo o desenvolvimento a uma única pessoa.</p>
+    </div>
+    <div class="cards">
+      <article class="card"><h3>Login e cadastro</h3><p>Formulários para que os usuários possam acessar o sistema e criar uma conta.</p></article>
+      <article class="card"><h3>Painel administrativo</h3><p>Área de administração para acessar recursos de gerenciamento da loja.</p></article>
+      <article class="card highlight"><h3>Chat cliente–administrador</h3><p>Mensagens persistidas no banco de dados, visualização das conversas e organização do atendimento.</p></article>
+    </div>
+  </section>
+
+  <section id="galeria">
+    <div class="section-head">
+      <span class="eyebrow">03 / Galeria</span>
+      <h2>Telas do projeto</h2>
+      <p>Algumas telas do Meutênis e da funcionalidade de conversa. Clique nas imagens para ampliar usando o navegador.</p>
+    </div>
+    <div class="gallery">
+      <figure class="shot">
+        <a href="criarconta.jpeg" target="_blank" rel="noopener"><img src="criarconta.jpeg" alt="Tela de login ou cadastro do Meutênis"></a>
+        <figcaption><strong>Criação de conta</strong><p>Interface para criar uma conta.</p></figcaption>
+      </figure>
+      <figure class="shot">
+        <a href="entrarnaconta.jpeg" target="_blank" rel="noopener"><img src="entrarnaconta.jpeg" alt="Formulário de cadastro do Meutênis"></a>
+        <figcaption><strong>Entrar na conta</strong><p>Interface para Entrar na conta que voce criou.</p></figcaption>
+      </figure>
+      <figure class="shot">
+        <a href="chatcliente.jpeg" target="_blank" rel="noopener"><img src="chatcliente.jpeg" alt="Tela de conversa do Meutênis"></a>
+        <figcaption><strong>Chat do cliente</strong><p>Mensagens enviadas pelo cliente.</p></figcaption>
+      </figure>
+      <figure class="shot">
+        <a href="chatvendedor.jpeg" target="_blank" rel="noopener"><img src="chatvendedor.jpeg" alt="Conversa do chat do Meutênis"></a>
+        <figcaption><strong>Chat do vendedor</strong><p>Mensagens recebidas pelo vendedor.</p></figcaption>
+      </figure>
+      <figure class="shot">
+        <a href="paineldovendedor.jpeg" target="_blank" rel="noopener"><img src="paineldovendedor.jpeg" alt="Tela de painel do projeto"></a>
+        <figcaption><strong>Painel do vendedor</strong><p>Painel administrativo do vendedor(antas de acessa-la tem uma tela de login do vendedor) .</p></figcaption>
+      </figure>
+      <figure class="shot">
+        <a href="chatsnopainel.jpeg" target="_blank" rel="noopener"><img src="chatsnopainel.jpeg" alt="Identidade visual Meutênis"></a>
+        <figcaption><strong>Chats dentro do painel</strong><p>Por aqui é possivel o vendedor administrar todos os chats e conversas pendentes .</p></figcaption>
+      </figure>
+        <figure class="shot">
+        <a href="clientesnopainel.jpeg" target="_blank" rel="noopener"><img src="clientesnopainel.jpeg" alt="Identidade visual Meutênis"></a>
+        <figcaption><strong>Clientes dentro do painel</strong><p>Por aqui é possivel o vendedor administrar todos os clientes com contas na loja .</p></figcaption>
+      </figure>
+    </div>
+    <div class="note">Observação: para a galeria funcionar, mantenha a pasta <strong>imagens</strong> junto com este arquivo HTML. As capturas são exemplos das telas disponíveis, não uma demonstração ao vivo do sistema (Por que ainda não aprendi a hospedar sites ).</div>
+  </section>
+
+  <section id="contribuicao">
+    <div class="section-head">
+      <span class="eyebrow">04 / Minha contribuição</span>
+      <h2>Desenvolvimento do chat e do painel</h2>
+      <p>Minha participação no projeto ficou concentrada principalmente no sistema de conversa entre cliente e administrador e na área de atendimento do vendedor.</p>
+    </div>
+    <div class="steps">
+      <article class="step"><div class="num">01</div><div><h3>Chat entre cliente e administrador</h3><p>Desenvolvimento da interface e da comunicação para envio e visualização das mensagens.</p></div></article>
+      <article class="step"><div class="num">02</div><div><h3>Persistência das mensagens</h3><p>Integração com PHP e MySQL para guardar as mensagens no banco de dados.</p></div></article>
+      <article class="step"><div class="num">03</div><div><h3>Visualização das conversas</h3><p>Área administrativa para consultar as conversas e acompanhar as mensagens recebidas.</p></div></article>
+      <article class="step"><div class="num">04</div><div><h3>Organização do atendimento</h3><p>Recursos como contador de mensagens não lidas e marcação de mensagens como lidas.</p></div></article>
+    </div>
+    <div class="note">O carrinho, os pagamentos e outras partes da loja são responsabilidades separadas no trabalho em grupo e não são apresentados aqui como minha contribuição individual.</div>
+  </section>
+</main>
+<footer><p><strong>MEUTÊNIS</strong> · Projeto de e-commerce desenvolvido em grupo</p><p>Portfólio de desenvolvimento web</p></footer>
+</body>
+</html>

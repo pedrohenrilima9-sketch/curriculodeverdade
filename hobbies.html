@@ -1,0 +1,136 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Perfil Web</title>
+</head>
+
+<body>
+
+<nav class="menu">
+    <a href="index.html">
+        <button>Início</button>
+    </a>
+
+    <a href="informacoes.html">
+        <button> Mais informações</button>
+    </a>
+</nav>
+
+<style>
+    html, body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+        background-image: url("plano_png.png");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
+
+    body {
+        background-color: #000000;
+        color: #ffffff;
+    }
+
+    .menu {
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+        padding: 12px 0;
+        background-color: #000000;
+    }
+
+    .menu button {
+        background-color: #ffffff;
+        color: #831b1b;
+        padding: 12px 25px;
+        border-radius: 6px;
+        border: 1px solid #831b1b;
+        font-family: Arial, sans-serif;
+        font-size: 20px;
+        font-weight: bold;
+        cursor: pointer;
+        transition: 0.2s;
+    }
+
+    .menu button:hover {
+        background-color: #831b1b;
+        color: #ffffff;
+        transform: scale(1.05);
+    }
+
+    a {
+        color: white;
+        text-decoration: none;
+    }
+
+    .conteudo {
+        text-align: center;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    h1, h2, h3 {
+        color: #ffffff;
+    }
+
+    h1 {
+        font-size: 24px;
+        color: #831b1b;
+    }
+
+    h3 {
+        font-size: 24px;
+        font-weight: normal;
+        line-height: 1.4;
+    }
+
+    .imagens {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 25px;
+        margin-top: 30px;
+        flex-wrap: wrap;
+    }
+
+    .imagens img {
+        border-radius: 30px;
+        border: 2px dashed #831b1b;
+        width: 300px;
+        height: 180px;
+        object-fit: cover;
+    }
+</style>
+
+<div class="conteudo">
+
+    <h1>MEUS HOBBIES SÃO:</h1>
+
+    <h3>
+        Gosto de jogar futsal, gosto também de ver series, algumas series que gosto sao:
+        <br>
+        The Walking Dead, Cobra Kai, Prison Break e Breaking Bad, gosto também de ver futebol e torço para o Flamengo
+        <br>
+        jogo vários jogos no celular como: eFootball, FIFA, as vezes também jogo Rocket League as vezes
+    </h3>
+
+    <div class="imagens">
+
+        <img src="https://tse1.mm.bing.net/th/id/OIP.DszvySwyjMiSSJdG_PUKuwHaEK?r=0&rs=1&pid=ImgDetMain&o=7&rm=3">
+
+        <img src="https://th.bing.com/th/id/OIP.Dr59Pq5QIpfqm00va3-KWgHaD4?w=301&h=180&c=7&r=0&o=7&pid=1.7&rm=3">
+
+        <img src="https://th.bing.com/th/id/OIP.AkvpySuBWJfLA1L7p3PbzQHaEK?w=301&h=180&c=7&r=0&o=7&pid=1.7&rm=3">
+
+    </div>
+
+</div>
+
+</body>
+</html>
+```

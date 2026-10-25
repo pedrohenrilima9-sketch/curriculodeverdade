@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barbearia — Sistema de Agendamento</title>
+    <style>
+        * { box-sizing: border-box; }
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background: #080808;
+            color: #f3f3f3;
+            line-height: 1.7;
+        }
+        header {
+            padding: 48px 20px;
+            text-align: center;
+            background: #000;
+            border-bottom: 2px solid #f5e900;
+        }
+        header h1 {
+            margin: 0 0 12px;
+            color: #f5e900;
+            font-size: clamp(2rem, 4vw, 3rem);
+        }
+        header p { max-width: 760px; margin: 0 auto; color: #d0d0d0; }
+        main { width: min(1100px, 92%); margin: 38px auto 60px; }
+        section {
+            margin-bottom: 34px;
+            padding: 26px;
+            background: #111;
+            border: 1px solid #34320a;
+            border-radius: 14px;
+        }
+        h2 { margin-top: 0; color: #f5e900; }
+        ul { padding-left: 24px; }
+        li { margin-bottom: 9px; }
+        .tecnologias { display: flex; flex-wrap: wrap; gap: 10px; }
+        .tecnologias span {
+            padding: 8px 13px;
+            border: 1px solid #f5e900;
+            border-radius: 8px;
+            color: #f5e900;
+            background: #191919;
+        }
+        .galeria {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 22px;
+        }
+        figure {
+            margin: 0;
+            padding: 12px;
+            background: #080808;
+            border: 1px solid #34320a;
+            border-radius: 12px;
+            overflow: hidden;
+        }
+        figure img {
+            display: block;
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            transition: transform .25s ease;
+        }
+        figure img:hover { transform: scale(1.025); }
+        figcaption { padding: 12px 4px 2px; color: #e4e4e4; font-weight: 600; }
+        footer { padding: 22px; text-align: center; color: #aaa; border-top: 1px solid #333; }
+        @media (max-width: 700px) {
+            .galeria { grid-template-columns: 1fr; }
+            section { padding: 20px; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Barbearia — Sistema de Agendamento</h1>
+        <p>Projeto de desenvolvimento web criado para oferecer uma experiência simples e prática para clientes e barbeiros.</p>
+    </header>
+
+    <main>
+        <section>
+            <h2>Sobre o projeto</h2>
+            <p>
+                O sistema permite que o cliente conheça os serviços oferecidos pela barbearia
+                e realize agendamentos de forma organizada. O barbeiro possui um painel próprio
+                para acompanhar os atendimentos e gerenciar os agendamentos.
+            </p>
+        </section>
+
+        <section>
+            <h2>Funcionalidades</h2>
+            <ul>
+                <li><strong>Sistema de agendamento:</strong> permite ao cliente informar nome, telefone, serviço, barbeiro, data e horário desejados.</li>
+                <li><strong>Controle de horários:</strong> os agendamentos são armazenados no banco de dados para ajudar a evitar conflitos.</li>
+                <li><strong>Painel do barbeiro:</strong> área administrativa para visualizar e acompanhar os agendamentos.</li>
+                <li><strong>Login do barbeiro:</strong> autenticação para restringir o acesso ao painel administrativo.</li>
+                <li><strong>Gerenciamento de agendamentos:</strong> permite acompanhar os atendimentos e alterar o status para “Finalizado”.</li>
+                <li><strong>Cadastro e armazenamento de informações:</strong> os dados dos clientes e dos agendamentos são registrados no banco de dados.</li>
+                <li><strong>Página de contato:</strong> formulário para facilitar a comunicação com a barbearia.</li>
+                <li><strong>Integração com WhatsApp:</strong> botão de contato direto para facilitar o atendimento.</li>
+                <li><strong>Interface responsiva:</strong> layout preparado para diferentes tamanhos de tela.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Tecnologias utilizadas</h2>
+            <div class="tecnologias">
+                <span>HTML5</span>
+                <span>CSS3</span>
+                <span>JavaScript</span>
+                <span>PHP</span>
+                <span>MySQL</span>
+                <span>XAMPP</span>
+                <span>Apache</span>
+            </div>
+        </section>
+
+        <section>
+            <h2>Imagens do projeto</h2>
+            <div class="galeria">
+                <figure>
+                    <img src="telainicial.png.jpeg" alt="Página inicial do site da barbearia">
+                    <figcaption>Página inicial e apresentação dos serviços</figcaption>
+                </figure>
+                <figure>
+                    <img src="agendamentos.png (2).jpeg" alt="Página de visualização dos agendamentos">
+                    <figcaption>Meus agendamentos e status dos atendimentos</figcaption>
+                </figure>
+                <figure>
+                    <img src="contato.png.jpeg" alt="Página de contato da barbearia">
+                    <figcaption>Formulário de contato e redes sociais</figcaption>
+                </figure>
+                <figure>
+                    <img src="agendarcorte.png.jpeg" alt="Formulário para agendar horário na barbearia">
+                    <figcaption>Formulário para agendar um horário</figcaption>
+                </figure>
+                 <figure>
+                    <img src="Captura de tela_24-10-2026_164428_localhost.jpeg" alt="Formulário para agendar horário na barbearia">
+                    <figcaption>login para o barbeiro acessar o seu painel</figcaption>
+                </figure>
+                  <figure>
+                    <img src="Captura de tela_24-10-2026_164515_localhost.jpeg" alt="Formulário para agendar horário na barbearia">
+                    <figcaption>painel do barbeiro</figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <section>
+            <h2>Objetivo do projeto</h2>
+            <p>
+                O projeto foi desenvolvido para aplicar conhecimentos de desenvolvimento web,
+                integração entre front-end e back-end, criação e utilização de banco de dados,
+                autenticação de usuários e gerenciamento de informações.
+            </p>
+            <p>
+                Além da parte visual, o sistema envolve a lógica necessária para conectar as páginas
+                ao banco de dados e transformar o site em uma aplicação funcional de agendamento.
+            </p>
+        </section>
+    </main>
+
+    <footer>
+        Projeto de desenvolvimento web — Barbearia
+    </footer>
+</body>
+</html>
